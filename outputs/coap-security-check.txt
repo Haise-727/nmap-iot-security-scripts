@@ -1,0 +1,13 @@
+# Nmap 7.991 scan initiated Thu Oct 15 20:23:54 2026 as: nmap -sU -p 5683 --script coap-security-check -oN coap-security-check.txt -oX coap-results.xml 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00060s latency).
+
+PORT     STATE SERVICE
+5683/udp open  coap
+| coap-security-check: 
+|   Transport: [RISK] Plaintext CoAP on port 5683 -- no DTLS encryption. Secure CoAPs normally runs on UDP/5684.
+|   Discovered resources: 
+|     /sensors/temp: [READABLE]
+|_    /admin/config: [RISK] sensitive-looking path, no authentication required
+
+# Nmap done at Thu Oct 15 20:23:54 2026 -- 1 IP address (1 host up) scanned in 0.11 seconds

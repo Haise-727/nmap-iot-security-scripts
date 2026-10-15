@@ -1,0 +1,11 @@
+# Nmap 7.991 scan initiated Thu Oct 15 20:23:50 2026 as: nmap -p 1883 --script mqtt-auth-check -oN mqtt-auth-check.txt -oX mqtt-results.xml 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000046s latency).
+
+PORT     STATE SERVICE
+1883/tcp open  mqtt
+| mqtt-auth-check: 
+|   Anonymous connect: [ANON ALLOWED] Broker accepted a CONNECT with no credentials
+|_  Topics observed: sensors/temp, test/topic
+
+# Nmap done at Thu Oct 15 20:23:54 2026 -- 1 IP address (1 host up) scanned in 3.59 seconds

@@ -1,0 +1,8 @@
+# Nmap 7.991 scan initiated Thu Oct 15 20:23:50 2026 as: nmap -p 1883 -oN before-mqtt.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000040s latency).
+
+PORT     STATE SERVICE
+1883/tcp open  mqtt
+
+# Nmap done at Thu Oct 15 20:23:50 2026 -- 1 IP address (1 host up) scanned in 0.05 seconds

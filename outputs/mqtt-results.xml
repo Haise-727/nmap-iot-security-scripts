@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.991 scan initiated Thu Oct 15 20:23:50 2026 as: nmap -p 1883 -&#45;script mqtt-auth-check -oN mqtt-auth-check.txt -oX mqtt-results.xml 127.0.0.1 -->
+<nmaprun scanner="nmap" args="nmap -p 1883 -&#45;script mqtt-auth-check -oN mqtt-auth-check.txt -oX mqtt-results.xml 127.0.0.1" start="1792076030" startstr="Thu Oct 15 20:23:50 2026" version="7.991" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="1883"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1792076030" endtime="1792076034"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="1883"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mqtt" method="table" conf="3"/><script id="mqtt-auth-check" output="&#xa;  Anonymous connect: [ANON ALLOWED] Broker accepted a CONNECT with no credentials&#xa;  Topics observed: sensors/temp, test/topic"><elem key="Anonymous connect">[ANON ALLOWED] Broker accepted a CONNECT with no credentials</elem>
+<elem key="Topics observed">sensors/temp, test/topic</elem>
+</script></port>
+</ports>
+<times srtt="46" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1792076034" timestr="Thu Oct 15 20:23:54 2026" summary="Nmap done at Thu Oct 15 20:23:54 2026; 1 IP address (1 host up) scanned in 3.59 seconds" elapsed="3.59" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

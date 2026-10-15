@@ -1,0 +1,11 @@
+# Nmap 7.991 scan initiated Thu Oct 15 20:23:50 2026 as: nmap -sU -p 5683 --script coap-resources -oN ref-coap-resources.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.00053s latency).
+
+PORT     STATE SERVICE
+5683/udp open  coap
+| coap-resources: 
+|   /admin/config: 
+|_  /sensors/temp: 
+
+# Nmap done at Thu Oct 15 20:23:50 2026 -- 1 IP address (1 host up) scanned in 0.12 seconds

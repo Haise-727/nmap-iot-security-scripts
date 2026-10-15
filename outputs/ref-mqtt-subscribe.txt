@@ -1,0 +1,67 @@
+# Nmap 7.991 scan initiated Thu Oct 15 20:23:48 2026 as: nmap -p 1883 --script mqtt-subscribe -oN ref-mqtt-subscribe.txt 127.0.0.1
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000035s latency).
+
+PORT     STATE SERVICE
+1883/tcp open  mosquitto version 2.1.2
+| mqtt-subscribe: 
+|   Topics and their most recent payloads: 
+|     $SYS/broker/load/sockets/15min: 1.66
+|     $SYS/broker/load/connections/15min: 1.66
+|     $SYS/broker/load/publish/dropped/15min: 0.00
+|     sensors/temp: 25
+|     $SYS/broker/load/connections/1min: 22.70
+|     $SYS/broker/bytes/received: 879
+|     $SYS/broker/load/publish/received/15min: 1.59
+|     $SYS/broker/load/publish/dropped/1min: 0.00
+|     $SYS/broker/heap/current: 849216
+|     $SYS/broker/load/bytes/sent/15min: 208.83
+|     $SYS/broker/clients/active: 1
+|     $SYS/broker/heap/maximum: 856832
+|     $SYS/broker/load/messages/sent/5min: 17.69
+|     $SYS/broker/clients/connected: 1
+|     $SYS/broker/load/sockets/5min: 4.90
+|     test/topic: hello
+|     $SYS/broker/publish/bytes/received: 84
+|     $SYS/broker/shared_subscriptions/count: 0
+|     $SYS/broker/store/messages/count: 55
+|     $SYS/broker/clients/total: 1
+|     $SYS/broker/load/bytes/received/1min: 798.39
+|     $SYS/broker/load/messages/received/15min: 4.90
+|     $SYS/broker/uptime: 11 seconds
+|     $SYS/broker/load/publish/dropped/5min: 0.00
+|     $SYS/broker/load/sockets/1min: 22.70
+|     $SYS/broker/subscriptions/count: 2
+|     $SYS/broker/store/messages/bytes: 192
+|     $SYS/broker/load/publish/sent/15min: 4.71
+|     $SYS/broker/retained messages/count: 55
+|     $SYS/broker/load/publish/sent/1min: 63.56
+|     $SYS/broker/publish/messages/sent: 99
+|     $SYS/broker/bytes/sent: 3769
+|     $SYS/broker/load/messages/sent/15min: 6.03
+|     $SYS/broker/load/publish/received/1min: 21.78
+|     $SYS/broker/clients/disconnected: 0
+|     $SYS/broker/publish/messages/received: 24
+|     $SYS/broker/load/publish/received/5min: 4.71
+|     $SYS/broker/packet/out/count: 0
+|     $SYS/broker/publish/bytes/sent: 365
+|     $SYS/broker/messages/stored: 55
+|     $SYS/broker/load/messages/sent/1min: 81.65
+|     $SYS/broker/publish/messages/dropped: 0
+|     $SYS/broker/packet/out/bytes: 0
+|     $SYS/broker/connections/socket/count: 25
+|     $SYS/broker/messages/sent: 118
+|     $SYS/broker/messages/received: 74
+|     $SYS/broker/load/bytes/received/5min: 172.41
+|     $SYS/broker/clients/inactive: 0
+|     $SYS/broker/load/publish/sent/5min: 13.77
+|     $SYS/broker/load/bytes/sent/1min: 2821.89
+|     $SYS/broker/load/messages/received/1min: 67.18
+|     $SYS/broker/load/bytes/received/15min: 58.22
+|     $SYS/broker/clients/expired: 0
+|     $SYS/broker/load/bytes/sent/5min: 611.30
+|     $SYS/broker/load/connections/5min: 4.90
+|     $SYS/broker/version: mosquitto version 2.1.2
+|_    $SYS/broker/load/messages/received/5min: 14.51
+
+# Nmap done at Thu Oct 15 20:23:50 2026 -- 1 IP address (1 host up) scanned in 1.77 seconds

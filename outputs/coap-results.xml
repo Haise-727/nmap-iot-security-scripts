@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.991 scan initiated Thu Oct 15 20:23:54 2026 as: nmap -sU -p 5683 -&#45;script coap-security-check -oN coap-security-check.txt -oX coap-results.xml 127.0.0.1 -->
+<nmaprun scanner="nmap" args="nmap -sU -p 5683 -&#45;script coap-security-check -oN coap-security-check.txt -oX coap-results.xml 127.0.0.1" start="1792076034" startstr="Thu Oct 15 20:23:54 2026" version="7.991" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="1" services="5683"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1792076034" endtime="1792076034"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="127.0.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="localhost" type="PTR"/>
+</hostnames>
+<ports><port protocol="udp" portid="5683"><state state="open" reason="udp-response" reason_ttl="64"/><service name="coap" method="table" conf="3"/><script id="coap-security-check" output="&#xa;  Transport: [RISK] Plaintext CoAP on port 5683 -&#45; no DTLS encryption. Secure CoAPs normally runs on UDP/5684.&#xa;  Discovered resources: &#xa;    /sensors/temp: [READABLE]&#xa;    /admin/config: [RISK] sensitive-looking path, no authentication required"><elem key="Transport">[RISK] Plaintext CoAP on port 5683 -&#45; no DTLS encryption. Secure CoAPs normally runs on UDP/5684.</elem>
+<table key="Discovered resources">
+<elem key="/sensors/temp">[READABLE]</elem>
+<elem key="/admin/config">[RISK] sensitive-looking path, no authentication required</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="596" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1792076034" timestr="Thu Oct 15 20:23:54 2026" summary="Nmap done at Thu Oct 15 20:23:54 2026; 1 IP address (1 host up) scanned in 0.11 seconds" elapsed="0.11" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
