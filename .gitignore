@@ -1,0 +1,4 @@
+test-servers/venv/
+test-servers/passwd
+test-servers/*.pid
+test-servers/.*.pid
